@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="m-3 p-3">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Câmbio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        #idDivForm {
+            border-style: solid;
+            padding: 50px;
+            background-color: gray;
+
+        }
+    </style>
+</head>
+
+<body class="bg-light bg-gradient">
+    <div class="row">
+        <h3 class="text-center fs-1">Exchange</h3>
+        <div class="col-6" id="idDivForm">
+            <form class="form-group" action="">
+                <label class="form-label" for="idMoedaEntrada">Moeda de entrada: </label>
+                <input class="form-control w-50" list="moedaEntrada" id="idMoedaEntrada" autocomplete="off">
+                <datalist id="moedaEntrada">
+                    <option value="Real"></option>
+                    <option value="Dólar Americano"></option>
+                    <option value="Euro"></option>
+                    <option value="Libra Esterlina"></option>
+                    <option value="Dólar Canadense"></option>
+                    <option value="Dólar Australiano"></option>
+                    <option value="Franco Suíço"></option>
+                    <option value="Coroa Dinamarquesa"></option>
+                    <option value="Iene"></option>
+                    <option value="Coroa Norueguesa"></option>
+                    <option value="Coroa Sueca"></option>
+
+                </datalist>
+                <br>
+                <label class="form-label" for="idValor">Valor para conversão: </label>
+                <input class="form-control w-50" type="number" name="nmValor" id="idValor" autocomplete="off" min="0"
+                    step="0.01">
+                <br>
+                <label class="form-label" for="idMoedasSaida">Moeda de saída: </label>
+                <input class="form-control w-50" list="moedaSaida" id="idMoedaSaida" autocomplete="off">
+                <datalist id="moedaSaida">
+                    <option value="Real"></option>
+                    <option value="Dólar Americano"></option>
+                    <option value="Euro"></option>
+                    <option value="Libra Esterlina"></option>
+                    <option value="Dólar Canadense"></option>
+                    <option value="Dólar Australiano"></option>
+                    <option value="Franco Suíço"></option>
+                    <option value="Coroa Dinamarquesa"></option>
+                    <option value="Iene"></option>
+                    <option value="Coroa Norueguesa"></option>
+                    <option value="Coroa Sueca"></option>
+                </datalist>
+                <br><br>
+                <button class="btn btn-success" type="button" id="btnCalc">Calcular</button>
+                <button class="btn btn-danger" type="reset">Limpar</button>
+                <button class="btn btn-danger" type="teste" id="idBtnTeste">teste</button>
+            </form>
+            <br><br>
+            <output id="idOut"></output>
+        </div>
+
+        <div class="col-6">
+            <table class="table table-success table-bordered text-center m-3 p-3">
+                <thead>
+                    <tr>
+                        <th>Moeda</th>
+                        <th>Valor de Referência em R$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dólar Americano</td>
+                        <td>R$5,42</td>
+                    </tr>
+                    <tr>
+                        <td>Euro</td>
+                        <td>R$6,34</td>
+                    </tr>
+                    <tr>
+                        <td>Libra Esterlina</td>
+                        <td>R$7,40</td>
+                    </tr>
+                    <tr>
+                        <td>Dólar Canadense</td>
+                        <td>R$4,23</td>
+                    </tr>
+                    <tr>
+                        <td>Dólar Australiano</td>
+                        <td>R$3,88</td>
+                    </tr>
+                    <tr>
+                        <td>Franco Suiço</td>
+                        <td>R$5,91</td>
+                    </tr>
+                    <tr>
+                        <td>Coroa Dinamarquesa</td>
+                        <td>R$0,85</td>
+                    </tr>
+                    <tr>
+                        <td>Iene</td>
+                        <td>R$0,049</td>
+                    </tr>
+                    <tr>
+                        <td>Coroa Norueguesa</td>
+                        <td>R$0,60</td>
+                    </tr>
+                    <tr>
+                        <td>Coroa Sueca</td>
+                        <td>R$0,62</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
